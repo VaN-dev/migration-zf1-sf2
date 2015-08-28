@@ -1,0 +1,24 @@
+<h1>This is a custom Zend Framework page</h1>
+
+<!-- Global notification handling to use call flashMessenger action helper -->
+<?php
+if (isset($this->flashmessages)) {
+    foreach ($this->flashmessages as $flashmessage) {
+        foreach ($flashmessage as $key => $message) {
+            echo $message;
+        }
+    }
+}
+?>
+
+<form method="post">
+    <div>
+        <label for="username">Username:</label><input type="text" name="username">
+    </div>
+    <div>
+        <label for="password">Password:</label><input type="text" name="password">
+    </div>
+    <div>
+        <input type="submit" value="Auth">
+    </div>
+</form>

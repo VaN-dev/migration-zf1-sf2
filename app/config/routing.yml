@@ -1,0 +1,8 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+zf1_wrapper:
+    resource: "@Zf1WrapperBundle/Resources/config/routing.yml"
+    prefix:   /

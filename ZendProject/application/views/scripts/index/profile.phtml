@@ -1,0 +1,9 @@
+<h1>Welcome, <?php echo Zend_Auth::getInstance()->getIdentity(); ?></h1>
+
+<?php
+echo $this->flashMessage;
+?>
+
+This is your secured profile page.
+
+<a href="/index/logout">Sign out</a>
